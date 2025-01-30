@@ -1,20 +1,21 @@
 @font-face {
-  font-family: 'Albertus Nova Black';
-  src: url('../fonts/Albertus Nova Black/AlbertusNovaBlack.otf') format('opentype');
+  font-family: "Albertus Nova Black";
+  src: url("../fonts/Albertus Nova Black/AlbertusNovaBlack.otf")
+    format("opentype");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Corsica MX';
-  src: url('../fonts/Corsica MX/CorsicaMX-Regular.ttf') format('truetype');
+  font-family: "Corsica MX";
+  src: url("../fonts/Corsica MX/CorsicaMX-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Troy Sans';
-  src: url('../fonts/Troy Sans/TroySans.otf') format('opentype');
+  font-family: "Troy Sans";
+  src: url("../fonts/Troy Sans/TroySans.otf") format("opentype");
   font-weight: normal;
   font-style: normal;
 }
@@ -27,7 +28,9 @@
 }
 
 body {
+  cursor: crosshair;
   background-image: url("../img/featured.jpg");
+  padding-bottom: 10vh;
 }
 
 .header {
@@ -84,14 +87,39 @@ body {
 .image-container {
   text-align: center;
   margin-top: 20px;
+  position: relative;
+  display: inline-block;
+  perspective: 1000px;
 }
 
 .image {
   max-width: 70%;
   height: auto;
+  transition: transform 0.1s ease-out, box-shadow 0.1s ease-out;
+  transform-origin: center;
+  transform-style: preserve-3d;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+@keyframes slideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(300px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+/* Aplica a animação para os elementos */
+.character, .date, .image-container {
+  animation: slideUp 1s ease-out forwards;
+  animation-duration: 1.5s;
 }
 
 .content {
+  cursor: text;
   width: 70%;
   margin: 30px auto;
 }
@@ -100,7 +128,7 @@ body {
   text-align: left;
   font-size: 1.2em;
   line-height: 1.6;
-  color: #D1D1D1;
+  color: #d1d1d1;
   margin-bottom: 25px;
 }
 
@@ -114,14 +142,14 @@ body {
     height: 15px;
     width: 15px;
   }
-  
+
   .back-text {
     font-size: 14px;
   }
 
   .character {
     font-size: 35px;
-    margin: 10px 0; 
+    margin: 10px 0;
   }
 
   .date {
