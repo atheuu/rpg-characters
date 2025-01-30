@@ -1,17 +1,20 @@
-const image = document.querySelector('.image');
-const navigation = document.querySelector('.navigation');
-const body = document.querySelector('body');
+const image = document.querySelector(".image");
+const navigation = document.querySelector(".navigation");
+const body = document.querySelector("body");
 
 // Função para verificar se os elementos estão carregados
 function checkIfLoaded() {
   if (image.complete && navigation) {
-    body.classList.add('show');
+    body.classList.add("show");
   }
 }
 
-// Se a imagem já estiver em cache (caso o carregamento seja rápido)
+// Evento de carregamento da imagem
+image.onload = checkIfLoaded;
+
+// Verifica se a imagem já foi carregada (em cache)
 if (image.complete) {
-  image.onload(); // Força a execução imediata
+  checkIfLoaded(); // Força a execução imediata
 }
 
 const imageContainer = document.querySelector(".image-container");
@@ -35,5 +38,6 @@ imageContainer.addEventListener("mousemove", (e) => {
 
 // Resetar a imagem quando o mouse sair
 imageContainer.addEventListener("mouseleave", () => {
-  imageElement.style.transform = "perspective(1000px) rotateY(0deg) rotateX(0deg)";
+  imageElement.style.transform =
+    "perspective(1000px) rotateY(0deg) rotateX(0deg)";
 });
