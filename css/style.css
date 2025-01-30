@@ -101,22 +101,28 @@ body {
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
 }
 
-@keyframes slideUp {
-  0% {
-    opacity: 0;
-    transform: translateY(300px);
+  /* Animação de entrada com efeito de deslizamento de baixo para cima */
+  @keyframes slideUp {
+    0% {
+      transform: translateY(100vh);  /* Inicialmente fora da tela (abaixo) */
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);      /* Posiciona no lugar original */
+      opacity: 1;
+    }
   }
-  100% {
-    opacity: 1;
-    transform: translateY(0px);
-  }
-}
 
-/* Aplica a animação para os elementos */
-.character, .date, .image-container {
-  animation: slideUp 1s ease-out forwards;
-  animation-duration: 1.5s;
-}
+  /* Os elementos inicialmente não têm animação */
+  .hidden {
+    opacity: 0;
+    transform: translateY(100vh); /* Inicialmente fora da tela */
+  }
+
+  /* Quando a classe 'show' é adicionada, a animação é aplicada */
+  .show .character, .show .date, .show .image-container {
+    animation: slideUp 1s ease-out forwards;
+  }
 
 .content {
   cursor: text;
