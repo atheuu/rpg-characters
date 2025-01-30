@@ -1,0 +1,145 @@
+@font-face {
+  font-family: 'Albertus Nova Black';
+  src: url('../fonts/Albertus Nova Black/AlbertusNovaBlack.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Corsica MX';
+  src: url('../fonts/Corsica MX/CorsicaMX-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Troy Sans';
+  src: url('../fonts/Troy Sans/TroySans.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Corsica MX", serif;
+}
+
+body {
+  background-image: url("../img/featured.jpg");
+}
+
+.header {
+  padding-top: 100px;
+  text-align: center;
+}
+
+.navigation {
+  display: flex;
+  justify-content: center;
+}
+
+.back-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  transition: filter 0.3s ease;
+}
+
+.back-link:hover {
+  filter: brightness(1.5);
+  cursor: pointer;
+}
+
+.back-icon {
+  height: 20px;
+  width: 20px;
+  margin-right: 5px;
+}
+
+.back-text {
+  color: #969696;
+  font-size: 16px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-shadow: 0px 0px 4px #000;
+}
+
+.character {
+  font-family: "Albertus Nova Black", serif;
+  font-size: 60px;
+  font-weight: 700;
+  color: #fff;
+  margin: 5px 0 20px;
+  text-shadow: 0px 0px 10px #000, 0px 0px 5px #000;
+}
+
+.date {
+  font-family: "Troy Sans", serif;
+  color: #969696;
+  font-size: 20px;
+}
+
+.image-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.image {
+  max-width: 70%;
+  height: auto;
+}
+
+.content {
+  width: 70%;
+  margin: 30px auto;
+}
+
+.paragraph {
+  text-align: left;
+  font-size: 1.2em;
+  line-height: 1.6;
+  color: #D1D1D1;
+  margin-bottom: 25px;
+}
+
+/* Estilos para dispositivos com largura máxima de 480px (smartphones) */
+@media (max-width: 480px) {
+  .header {
+    padding-top: 50px;
+  }
+
+  .back-icon {
+    height: 15px;
+    width: 15px;
+  }
+  
+  .back-text {
+    font-size: 14px;
+  }
+
+  .character {
+    font-size: 35px;
+    margin: 10px 0; 
+  }
+
+  .date {
+    font-size: 14px;
+  }
+
+  .image {
+    max-width: 90%;
+  }
+
+  .content {
+    width: 90%;
+    margin: 20px auto;
+  }
+
+  .paragraph {
+    font-size: 1em;
+    text-align: justify;
+    line-height: 1.5;
+  }
+}

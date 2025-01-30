@@ -1,0 +1,312 @@
+@font-face {
+    font-family: 'Corsica MX Book Cond';
+    src: url('CorsicaMX-BookCondIt.eot');
+    src: local('Corsica MX Book Cond Italic'), local('CorsicaMX-BookCondIt'),
+        url('CorsicaMX-BookCondIt.eot?#iefix') format('embedded-opentype'),
+        url('CorsicaMX-BookCondIt.woff2') format('woff2'),
+        url('CorsicaMX-BookCondIt.woff') format('woff'),
+        url('CorsicaMX-BookCondIt.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Corsica MX Cond';
+    src: url('CorsicaMX-BoldCondIt.eot');
+    src: local('Corsica MX Bold Cond Italic'), local('CorsicaMX-BoldCondIt'),
+        url('CorsicaMX-BoldCondIt.eot?#iefix') format('embedded-opentype'),
+        url('CorsicaMX-BoldCondIt.woff2') format('woff2'),
+        url('CorsicaMX-BoldCondIt.woff') format('woff'),
+        url('CorsicaMX-BoldCondIt.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Corsica MX Book';
+    src: url('CorsicaMX-Book.eot');
+    src: local('Corsica MX Book'), local('CorsicaMX-Book'),
+        url('CorsicaMX-Book.eot?#iefix') format('embedded-opentype'),
+        url('CorsicaMX-Book.woff2') format('woff2'),
+        url('CorsicaMX-Book.woff') format('woff'),
+        url('CorsicaMX-Book.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Corsica MX';
+    src: url('CorsicaMX-BoldIt.eot');
+    src: local('Corsica MX Bold Italic'), local('CorsicaMX-BoldIt'),
+        url('CorsicaMX-BoldIt.eot?#iefix') format('embedded-opentype'),
+        url('CorsicaMX-BoldIt.woff2') format('woff2'),
+        url('CorsicaMX-BoldIt.woff') format('woff'),
+        url('CorsicaMX-BoldIt.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Corsica MX Book Cond';
+    src: url('CorsicaMX-BookCond.eot');
+    src: local('Corsica MX Book Cond'), local('CorsicaMX-BookCond'),
+        url('CorsicaMX-BookCond.eot?#iefix') format('embedded-opentype'),
+        url('CorsicaMX-BookCond.woff2') format('woff2'),
+        url('CorsicaMX-BookCond.woff') format('woff'),
+        url('CorsicaMX-BookCond.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Corsica MX';
+    src: url('CorsicaMX-Bold.eot');
+    src: local('Corsica MX Bold'), local('CorsicaMX-Bold'),
+        url('CorsicaMX-Bold.eot?#iefix') format('embedded-opentype'),
+        url('CorsicaMX-Bold.woff2') format('woff2'),
+        url('CorsicaMX-Bold.woff') format('woff'),
+        url('CorsicaMX-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Corsica MX Cond';
+    src: url('CorsicaMX-BoldCond.eot');
+    src: local('Corsica MX Bold Cond'), local('CorsicaMX-BoldCond'),
+        url('CorsicaMX-BoldCond.eot?#iefix') format('embedded-opentype'),
+        url('CorsicaMX-BoldCond.woff2') format('woff2'),
+        url('CorsicaMX-BoldCond.woff') format('woff'),
+        url('CorsicaMX-BoldCond.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Corsica MX Light Cond';
+    src: url('CorsicaMX-LightCond.eot');
+    src: local('Corsica MX Light Cond'), local('CorsicaMX-LightCond'),
+        url('CorsicaMX-LightCond.eot?#iefix') format('embedded-opentype'),
+        url('CorsicaMX-LightCond.woff2') format('woff2'),
+        url('CorsicaMX-LightCond.woff') format('woff'),
+        url('CorsicaMX-LightCond.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Corsica MX Medium Cond';
+    src: url('CorsicaMX-MediumCondIt.eot');
+    src: local('Corsica MX Medium Cond Italic'), local('CorsicaMX-MediumCondIt'),
+        url('CorsicaMX-MediumCondIt.eot?#iefix') format('embedded-opentype'),
+        url('CorsicaMX-MediumCondIt.woff2') format('woff2'),
+        url('CorsicaMX-MediumCondIt.woff') format('woff'),
+        url('CorsicaMX-MediumCondIt.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Corsica MX';
+    src: url('CorsicaMX-Light.eot');
+    src: local('Corsica MX Light'), local('CorsicaMX-Light'),
+        url('CorsicaMX-Light.eot?#iefix') format('embedded-opentype'),
+        url('CorsicaMX-Light.woff2') format('woff2'),
+        url('CorsicaMX-Light.woff') format('woff'),
+        url('CorsicaMX-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Corsica MX';
+    src: url('CorsicaMX-Regular.eot');
+    src: local('Corsica MX Regular'), local('CorsicaMX-Regular'),
+        url('CorsicaMX-Regular.eot?#iefix') format('embedded-opentype'),
+        url('CorsicaMX-Regular.woff2') format('woff2'),
+        url('CorsicaMX-Regular.woff') format('woff'),
+        url('CorsicaMX-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Corsica MX';
+    src: url('CorsicaMX-Medium.eot');
+    src: local('Corsica MX Medium'), local('CorsicaMX-Medium'),
+        url('CorsicaMX-Medium.eot?#iefix') format('embedded-opentype'),
+        url('CorsicaMX-Medium.woff2') format('woff2'),
+        url('CorsicaMX-Medium.woff') format('woff'),
+        url('CorsicaMX-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Corsica MX Medium Cond';
+    src: url('CorsicaMX-MediumCond.eot');
+    src: local('Corsica MX Medium Cond'), local('CorsicaMX-MediumCond'),
+        url('CorsicaMX-MediumCond.eot?#iefix') format('embedded-opentype'),
+        url('CorsicaMX-MediumCond.woff2') format('woff2'),
+        url('CorsicaMX-MediumCond.woff') format('woff'),
+        url('CorsicaMX-MediumCond.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Corsica MX Book';
+    src: url('CorsicaMX-BookIt.eot');
+    src: local('Corsica MX Book Italic'), local('CorsicaMX-BookIt'),
+        url('CorsicaMX-BookIt.eot?#iefix') format('embedded-opentype'),
+        url('CorsicaMX-BookIt.woff2') format('woff2'),
+        url('CorsicaMX-BookIt.woff') format('woff'),
+        url('CorsicaMX-BookIt.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Corsica MX';
+    src: url('CorsicaMX-MediumIt.eot');
+    src: local('Corsica MX Medium Italic'), local('CorsicaMX-MediumIt'),
+        url('CorsicaMX-MediumIt.eot?#iefix') format('embedded-opentype'),
+        url('CorsicaMX-MediumIt.woff2') format('woff2'),
+        url('CorsicaMX-MediumIt.woff') format('woff'),
+        url('CorsicaMX-MediumIt.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Corsica MX Light Cond';
+    src: url('CorsicaMX-LightCondIt.eot');
+    src: local('Corsica MX Light Cond Italic'), local('CorsicaMX-LightCondIt'),
+        url('CorsicaMX-LightCondIt.eot?#iefix') format('embedded-opentype'),
+        url('CorsicaMX-LightCondIt.woff2') format('woff2'),
+        url('CorsicaMX-LightCondIt.woff') format('woff'),
+        url('CorsicaMX-LightCondIt.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Corsica MX';
+    src: url('CorsicaMX-LightIt.eot');
+    src: local('Corsica MX Light Italic'), local('CorsicaMX-LightIt'),
+        url('CorsicaMX-LightIt.eot?#iefix') format('embedded-opentype'),
+        url('CorsicaMX-LightIt.woff2') format('woff2'),
+        url('CorsicaMX-LightIt.woff') format('woff'),
+        url('CorsicaMX-LightIt.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Corsica MX Cond';
+    src: url('CorsicaMX-RegularCondIt.eot');
+    src: local('Corsica MX Regular Cond Italic'), local('CorsicaMX-RegularCondIt'),
+        url('CorsicaMX-RegularCondIt.eot?#iefix') format('embedded-opentype'),
+        url('CorsicaMX-RegularCondIt.woff2') format('woff2'),
+        url('CorsicaMX-RegularCondIt.woff') format('woff'),
+        url('CorsicaMX-RegularCondIt.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Corsica MX';
+    src: url('CorsicaMX-SemiBold.eot');
+    src: local('Corsica MX SemiBold'), local('CorsicaMX-SemiBold'),
+        url('CorsicaMX-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('CorsicaMX-SemiBold.woff2') format('woff2'),
+        url('CorsicaMX-SemiBold.woff') format('woff'),
+        url('CorsicaMX-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Corsica MX';
+    src: url('CorsicaMX-SemiBoldIt.eot');
+    src: local('Corsica MX SemiBold Italic'), local('CorsicaMX-SemiBoldIt'),
+        url('CorsicaMX-SemiBoldIt.eot?#iefix') format('embedded-opentype'),
+        url('CorsicaMX-SemiBoldIt.woff2') format('woff2'),
+        url('CorsicaMX-SemiBoldIt.woff') format('woff'),
+        url('CorsicaMX-SemiBoldIt.ttf') format('truetype');
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Corsica MX Cond';
+    src: url('CorsicaMX-RegularCond.eot');
+    src: local('Corsica MX Regular Cond'), local('CorsicaMX-RegularCond'),
+        url('CorsicaMX-RegularCond.eot?#iefix') format('embedded-opentype'),
+        url('CorsicaMX-RegularCond.woff2') format('woff2'),
+        url('CorsicaMX-RegularCond.woff') format('woff'),
+        url('CorsicaMX-RegularCond.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Corsica MX SemiBold Cond';
+    src: url('CorsicaMX-SemiBoldCondIt.eot');
+    src: local('Corsica MX SemiBold Cond Italic'), local('CorsicaMX-SemiBoldCondIt'),
+        url('CorsicaMX-SemiBoldCondIt.eot?#iefix') format('embedded-opentype'),
+        url('CorsicaMX-SemiBoldCondIt.woff2') format('woff2'),
+        url('CorsicaMX-SemiBoldCondIt.woff') format('woff'),
+        url('CorsicaMX-SemiBoldCondIt.ttf') format('truetype');
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Corsica MX SemiBold Cond';
+    src: url('CorsicaMX-SemiBoldCond.eot');
+    src: local('Corsica MX SemiBold Cond'), local('CorsicaMX-SemiBoldCond'),
+        url('CorsicaMX-SemiBoldCond.eot?#iefix') format('embedded-opentype'),
+        url('CorsicaMX-SemiBoldCond.woff2') format('woff2'),
+        url('CorsicaMX-SemiBoldCond.woff') format('woff'),
+        url('CorsicaMX-SemiBoldCond.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Corsica MX';
+    src: url('CorsicaMX-RegularIt.eot');
+    src: local('Corsica MX Regular Italic'), local('CorsicaMX-RegularIt'),
+        url('CorsicaMX-RegularIt.eot?#iefix') format('embedded-opentype'),
+        url('CorsicaMX-RegularIt.woff2') format('woff2'),
+        url('CorsicaMX-RegularIt.woff') format('woff'),
+        url('CorsicaMX-RegularIt.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
