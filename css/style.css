@@ -120,7 +120,7 @@ body {
   }
 
   /* Quando a classe 'show' é adicionada, a animação é aplicada */
-  .show .character, .show .date, .show .image-container {
+  .show .character, .show .date, .show .image-container, .show .content {
     animation: slideUp 1s ease-out forwards;
   }
 
