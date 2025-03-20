@@ -41,3 +41,24 @@ imageContainer.addEventListener("mouseleave", () => {
   imageElement.style.transform =
     "perspective(1000px) rotateY(0deg) rotateX(0deg)";
 });
+
+// Scroll to Top Functionality
+const backToTopButton = document.querySelector(".back-to-top");
+
+// Mostrar/Ocultar botão
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 200) {
+    backToTopButton.classList.add("show");
+  } else {
+    backToTopButton.classList.remove("show");
+  }
+});
+
+// Scroll suave
+backToTopButton.addEventListener("click", (e) => {
+  e.preventDefault();
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+});

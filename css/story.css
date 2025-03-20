@@ -1,37 +1,4 @@
-@font-face {
-  font-family: "Albertus Nova Black";
-  src: url("../fonts/Albertus Nova Black/AlbertusNovaBlack.otf")
-    format("opentype");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Corsica MX";
-  src: url("../fonts/Corsica MX/CorsicaMX-Regular.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Troy Sans";
-  src: url("../fonts/Troy Sans/TroySans.otf") format("opentype");
-  font-weight: normal;
-  font-style: normal;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Corsica MX", serif;
-}
-
-body {
-  cursor: crosshair;
-  background-image: url("../img/featured.jpg");
-  padding-bottom: 10vh;
-}
+@import url("global.css");
 
 .header {
   padding-top: 100px;
@@ -101,28 +68,28 @@ body {
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
 }
 
-  /* Animação de entrada com efeito de deslizamento de baixo para cima */
-  @keyframes slideUp {
-    0% {
-      transform: translateY(100vh);  /* Inicialmente fora da tela (abaixo) */
-      opacity: 0;
-    }
-    100% {
-      transform: translateY(0);      /* Posiciona no lugar original */
-      opacity: 1;
-    }
-  }
-
-  /* Os elementos inicialmente não têm animação */
-  .hidden {
+@keyframes slideUp {
+  0% {
+    transform: translateY(100vh);
     opacity: 0;
-    transform: translateY(100vh); /* Inicialmente fora da tela */
   }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
 
-  /* Quando a classe 'show' é adicionada, a animação é aplicada */
-  .show .character, .show .date, .show .image-container, .show .content {
-    animation: slideUp 1s ease-out forwards;
-  }
+.hidden {
+  opacity: 0;
+  transform: translateY(100vh);
+}
+
+.show .character,
+.show .date,
+.show .image-container,
+.show .content {
+  animation: slideUp 1s ease-out forwards;
+}
 
 .content {
   cursor: text;
@@ -138,7 +105,72 @@ body {
   margin-bottom: 25px;
 }
 
-/* Estilos para dispositivos com largura máxima de 480px (smartphones) */
+.paragraph.quote {
+  font-style: italic;
+  color: #fff !important;
+  margin: 30px 0;
+  padding-left: 20px;
+  border-left: 3px solid #2e5786;
+}
+
+/* Botão Voltar ao Topo */
+.back-to-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(20px);
+  transition: all 0.3s ease-in-out;
+  z-index: 1000;
+}
+
+.back-to-top.show {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.back-to-top__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  background: rgba(46, 87, 134, 0.8);
+  border-radius: 50%;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+
+.back-to-top__link:hover {
+  background: rgba(46, 87, 134, 1);
+  transform: scale(1.1) rotate(360deg);
+}
+
+.back-to-top__icon {
+  width: 24px;
+  height: 24px;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
+}
+
+@media (max-width: 768px) {
+  .back-to-top {
+    bottom: 20px;
+    right: 20px;
+  }
+
+  .back-to-top__link {
+    width: 40px;
+    height: 40px;
+  }
+
+  .back-to-top__icon {
+    width: 20px;
+    height: 20px;
+  }
+}
+
 @media (max-width: 678px) {
   .header {
     padding-top: 50px;
